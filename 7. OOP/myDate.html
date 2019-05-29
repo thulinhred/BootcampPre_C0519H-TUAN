@@ -1,0 +1,76 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    
+<script>
+    // Date(day, month, year) là phương thức khởi tạo để tạo đối tượng với 3 tham số.
+    let myDate = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+
+    // getDay(), getMonth(), getYear() là phương thức trả về ngày, tháng, năm 
+
+        this.getDay = function() {
+            return this.day;
+        }
+        this.getMonth = function() {
+            return this.month;
+        }
+        this.getYear = function() {
+            return this.year;
+        }
+
+    // setDay(), setMonth(), setYear() là phương thức thiết đặt lại giá trị mới cho ngày tháng năm
+        this.setDay = function(day) {
+            this.day  = day;
+        }
+        this.setMonth = function(month) {
+            this.month  = month;
+        }
+        this.setYear = function(year) {
+            this.year  = year;
+        }
+        //Add setDate function
+        this.setDate = function(day,month,year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        this.toString = function(){
+            document.write(this.day + "/" + this.month + "/" + this.year)
+        }
+        
+    };
+
+    
+  
+
+    
+    let date = new myDate(22, 5, 2019);
+    let day = date.getDay();
+    let month = date.getMonth();
+    let year = date.getYear();  
+    console.log(day + "/" + month + "/" + year); 
+
+    //Run the program
+    function alertDate(){
+        let date = new myDate();
+        date.setDate(2,2,3)
+        date.toString()
+    }
+    alertDate()
+       
+
+
+
+    
+</script>
+</body>
+
+</html>

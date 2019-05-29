@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADAM AND EVA STORY</title>
+</head>
+
+<body>
+    <script>
+        var Apple = function (weight) {
+            this.weight = weight;
+            this.decrease = function () {
+                this.weight--;
+            }
+            this.isEmpty = function () {
+                if (this.weight === 0) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+
+            }
+            this.getWeight = function () {
+                return this.weight;
+            }
+        }
+
+        let Human = function (name, gender, weight) {
+            this.name = name;
+            this.weight = weight;
+            this.gender = gender;
+            this.isMale = function () {
+                if (this.gender = 'male') {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            this.setGender = function (gender) {
+                this.gender = gender;
+            }
+            this.checkApple = function (apple) {
+                return !apple.isEmpty();
+            }
+            this.eat = function (apple) {
+                    this.weight++;
+                    apple.decrease();
+                }
+
+            this.say = function () {
+                    console.log("Hey I can talk!");
+                }
+            this.getName = function () {
+                    return this.name;
+                }
+            this.setName = function (name) {
+                    this.name = name;
+                }
+            this.getWeight = function () {
+                    return this.weight;
+
+                }
+            this.setWeight = function (weight) {
+                    this.weight = weight;
+                }
+
+
+
+            }
+            // Lets run
+            let adam = new Human('Adam', 'male', 54);
+            let eva = new Human("eva", "female", 45);
+            let newapple = new Apple()
+            adam.eat(newapple);
+            eva.eat(newapple);
+            console.log(adam.getWeight());
+            console.log(eva.getWeight());
+            console.log(newapple.getWeight())
+
+
+    </script>
+
+</body>
+
+</html>

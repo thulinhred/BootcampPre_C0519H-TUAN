@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Adam and Eva fighting for an apple</title>
+    <script src="human1.js"></script>
+    <script src="apple1.js"></script>
+</head>
+
+
+
+<script>
+
+
+    let adam = new Human('Adam', 'Male', 55);
+    let eva = new Human('Eva', 'Female', 45);
+    let apple = new Apple(10);
+
+    adam.isMale();
+    eva.isMale();
+    adam.setGender('Female');
+    adam.isMale();
+    
+    console.log(apple.getWeight());
+    
+    while (!apple.getWeight() == 0) {
+        adam.eat();
+        eva.eat();
+    }
+    console.log(apple.getWeight());
+    console.log(adam.getWeight());
+    console.log(eva.getWeight());
+
+
+
+
+</script>

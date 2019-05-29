@@ -1,0 +1,36 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <p>Simple Dictionnary</p> 
+
+<body>
+    <input type= "text" value= "" id="inputText"></input>
+    <input type= "button" value= "Search" onclick="searchWord()"></input>
+
+    
+<script>
+    //May18,2019
+    let engWord = ["If", "I", "Were", "Sin"]
+    let viWord = ["Nếu", "Tôi", "Là", "Lỗi"]
+    let count = 0;
+    function searchWord() {
+        for (let i=0; i<4; i++ ) {
+            if (engWord[i] == document.getElementById("inputText").value) {
+            alert (viWord[i]);
+            count ++;
+            }
+        }
+
+        if (count == 0){
+            alert ("Not found");
+        }
+        
+    }
+ </script>
+
+
+</body>
+
+</html>

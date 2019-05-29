@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+     let weight;
+     let height;
+     let bmi;
+     weight = parseFloat (prompt("Please input your weight in kilogram"));
+     // in kg
+     height = parseFloat (prompt("Please input your height in meter"));
+     // in m
+     bmi = weight / height / height;
+     //bmi stand for  Body mass index
+     if (bmi < 18.5) {
+         alert ('You are Underweight');
+     }
+     else if (bmi < 25.0) {
+         alert ('You are Normal');
+     }
+     else if (bmi < 30.0) {
+         alert ('You are Overweight');
+     }
+     else {
+         alert ('You are Obese');
+     }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    
+<script>
+    let Temperature= function(celsiusDegree) {
+        this.celsiusDegree = celsiusDegree;
+        this.celsiusDegree >= -273;
+        
+        this.getCelsiusDegree = function() {
+            return celsiusDegree;
+        }
+        this.getFahrenheitDegree = function() {
+            return celsiusDegree * 9/5 + 32;
+        }
+        this.getKelvinDegree = function() {
+            return celsiusDegree + 273.15;
+        }
+
+    }
+    
+    let temperature = new Temperature(25);
+    let fahrenheitDegree = temperature.getFahrenheitDegree();
+    let kelvinDegree = temperature.getKelvinDegree();
+    alert("fahrenheit degree is: " + fahrenheitDegree + "; kelvin degree is: " + kelvinDegree);
+   
+
+
+</script>
+</body>
+
+</html>
