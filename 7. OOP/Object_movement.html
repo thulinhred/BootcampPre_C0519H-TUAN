@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Objects</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="game"></div>
     <script>
         function Hero(image, top, left, size, speed) {
@@ -14,26 +16,26 @@
             this.size = size;
             this.speed = speed;
 
-            this.getHeroElement = function() {
-                return '<img width="'+ this.size + '"' +
-                ' height="'+ this.size + '"' +
-                ' src="' + this.image + '"' +
-                ' style="top: '+ this.top+'px; left:'+ this.left+'px;position:absolute;" />';
+            this.getHeroElement = function () {
+                return '<img width="' + this.size + '"' +
+                    ' height="' + this.size + '"' +
+                    ' src="' + this.image + '"' +
+                    ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
             }
 
-            this.moveRight = function() {
+            this.moveRight = function () {
                 this.left += this.speed;
                 console.log('ok: ' + this.left);
             }
-            this.moveLeft = function() {
+            this.moveLeft = function () {
                 this.left -= this.speed;
                 console.log('ok:' + this.left);
             }
-            this.moveDown = function() {
+            this.moveDown = function () {
                 this.top += this.speed;
                 console.log('ok:' + this.top);
             }
-            this.moveUp = function() {
+            this.moveUp = function () {
                 this.top -= this.speed;
                 console.log('ok:' + this.top);
             }
@@ -43,26 +45,27 @@
         let hero = new Hero('pikachu.png', 20, 40, 200, 30);
 
         function start() {
-            if(hero.left < window.innerWidth - hero.size && hero.top == 20) {
+            if (hero.left < window.innerWidth - hero.size && hero.top == 20) {
                 hero.moveRight();
             }
-            else if(hero.left >= window.innerWidth - hero.size && hero.top < window.innerHeight - hero.size){
+            else if (hero.left >= window.innerWidth - hero.size && hero.top < window.innerHeight - hero.size) {
                 hero.moveDown();
             }
-            else if(hero.top >= window.innerHeight - hero.size && hero.left >= 10) {
+            else if (hero.top >= window.innerHeight - hero.size && hero.left >= 10) {
                 hero.moveLeft();
             }
             else {
                 hero.moveUp();
             }
 
-         
+
             document.getElementById('game').innerHTML = hero.getHeroElement();
             setTimeout(start, 20)
         }
 
-       start();
-    
+        start();
+
     </script>
-  </body>
+</body>
+
 </html>

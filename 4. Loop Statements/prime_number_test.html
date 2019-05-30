@@ -1,41 +1,34 @@
-
-
-
 <!DOCTYPE html>
 <html>
 
 <body>
 
-    
-<script>
-    let n = parseInt(prompt("Input number"));
-    
-    if (n == 1) {
-        alert(n + ' is not prime number');
-    }
-    else if(n == 2) {
-        alert (n + ' is prime number');
-    } 
-    else {
-        for(let x = 2; x < n; x++) {
-            if(n % x == 0) {
-                alert(n + ' is not prime number');
-            } 
-            else {          
-                alert(n + ' is prime number');  
+
+    <script>
+        let n = parseInt(prompt("Input number"));
+
+        if (n == 1) {
+            alert(n + ' is not prime number');
+        }
+        else if (n == 2) {
+            alert(n + ' is prime number');
+        }
+        else {
+            for (let x = 2; x < n; x++) {
+                if (n % x == 0) {
+                    alert(n + ' is not prime number');
+                }
+                else {
+                    alert(n + ' is prime number');
+                }
             }
         }
-    }
     // tại sao không đóng được chương trình, the screen still exist the checkbox after the code run
     // how to fix it?
     // is this better to use true/false method?
 
-    
 
-
-  
-    
-</script>
+    </script>
 </body>
 
 </html>

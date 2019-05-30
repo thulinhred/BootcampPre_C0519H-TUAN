@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <div>
         <input type="text" name="" id="firstNumber">
@@ -15,36 +17,33 @@
         <button type="button" onclick="sum()">addition(+)</button>
         <button type="button" onclick="subtraction()">addition(-)</button>
         <button type="button" onclick="multiply()">addition(X)</button>
-        <button type="button"onclick="division()">addition(/)</button>
+        <button type="button" onclick="division()">addition(/)</button>
     </div>
     <div>
-        <p>result: </p> <p id="show"></p>
+        <p>result: </p>
+        <p id="show"></p>
     </div>
 
     <script>
-        function sum()
-        {
+        function sum() {
             let a = parseInt(document.getElementById('firstNumber').value);
             let b = parseInt(document.getElementById('secondNumber').value);
             let result = a + b;
             document.getElementById('show').innerHTML = result;
         }
-        function multiply()
-        {
+        function multiply() {
             let a = parseInt(document.getElementById('firstNumber').value);
             let b = parseInt(document.getElementById('secondNumber').value);
             let result = a * b;
             document.getElementById('show').innerHTML = result;
         }
-        function division()
-        {
+        function division() {
             let a = parseInt(document.getElementById('firstNumber').value);
             let b = parseInt(document.getElementById('secondNumber').value);
             let result = a / b;
             document.getElementById('show').innerHTML = result;
         }
-        function subtraction()
-        {
+        function subtraction() {
             let a = parseInt(document.getElementById('firstNumber').value);
             let b = parseInt(document.getElementById('secondNumber').value);
             let result = a - b;
@@ -52,4 +51,5 @@
         }
     </script>
 </body>
+
 </html>

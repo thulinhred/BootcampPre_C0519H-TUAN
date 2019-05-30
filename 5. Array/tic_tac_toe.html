@@ -1,53 +1,52 @@
-
-
 <!DOCTYPE html>
 <html>
+
 <body>
-    <h3>Tic Tac Toe</h3>
-    <p id="carogame"></p>
-    <input type="button" value="Change Value" onclick="changeValue()">
+  <h3>Tic Tac Toe</h3>
+  <p id="carogame"></p>
+  <input type="button" value="Change Value" onclick="changeValue()">
 </body>
 
-    
+
 <script>
-    let b = document.getElementById("carogame");
+  let b = document.getElementById("carogame");
 
-let board = [];
-let data = "";
-for (let i = 0; i < 5; i++) {
-   board[i] = new Array('.','.', '.', '.', '.');
-}
+  let board = [];
+  let data = "";
+  for (let i = 0; i < 5; i++) {
+    board[i] = new Array('.', '.', '.', '.', '.');
+  }
 
-for (let i = 0; i < 5; i++) {
-   data += "<br/>";
-   for (let j = 0; j < 5; j++) {
-   data += board[i][j] + "&nbsp;&nbsp;";
-   }
-}
+  for (let i = 0; i < 5; i++) {
+    data += "<br/>";
+    for (let j = 0; j < 5; j++) {
+      data += board[i][j] + "&nbsp;&nbsp;";
+    }
+  }
 
- b.innerHTML = data;
+  b.innerHTML = data;
 
- function changeValue() {
-   let positionX1 = prompt("X1: ");
-   let positionY1 = prompt("Y1: ");
-   let positionX2 = prompt("X2: ");
-   let positionY2 = prompt("Y2: ");
+  function changeValue() {
+    let positionX1 = prompt("X1: ");
+    let positionY1 = prompt("Y1: ");
+    let positionX2 = prompt("X2: ");
+    let positionY2 = prompt("Y2: ");
 
-   data = "";
-   board[positionX1][positionY1] = "x";
-   board[positionX2][positionY2] = "o";
-   for (let i = 0; i < 5; i++) {
-     data += "<br/>";
-     for (let j = 0; j < 5; j++) {
-         data += board[i][j] + "&nbsp;&nbsp;";
-     }
-   }
-   b.innerHTML = "<hr/>" + data;
- }
-  
+    data = "";
+    board[positionX1][positionY1] = "x";
+    board[positionX2][positionY2] = "o";
+    for (let i = 0; i < 5; i++) {
+      data += "<br/>";
+      for (let j = 0; j < 5; j++) {
+        data += board[i][j] + "&nbsp;&nbsp;";
+      }
+    }
+    b.innerHTML = "<hr/>" + data;
+  }
 
-  
-    
+
+
+
 </script>
 </body>
 

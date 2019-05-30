@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-<body>
-        <script>
-             let inputPhysicGrade;
-             let inputChemistryGrade;
-             let inputMathGrade;
-                 inputPhysicGrade = prompt("Enter your Physic Grade");
-                 inputChemistryGrade = prompt(" Enter your Chemistry Grade");
-                 inputMathGrade = prompt("Enter your Math Grade");
-             let physicGrade = parseFloat(inputPhysicGrade);
-             let chemistryGrade = parseFloat(inputChemistryGrade);
-             let mathGrade = parseFloat(inputMathGrade);
 
-             let average = (physicGrade + chemistryGrade + mathGrade)/3; 
-             let summary = physicGrade + chemistryGrade + mathGrade;
-
-             document.write("Your Average Grade is: " + average);
-             document.write('<br/>');
-             document.write( "Your Summary Grade is: " + summary);
-        </script>
 <body>
+    <script>
+        let inputPhysicGrade;
+        let inputChemistryGrade;
+        let inputMathGrade;
+        inputPhysicGrade = prompt("Enter your Physic Grade");
+        inputChemistryGrade = prompt(" Enter your Chemistry Grade");
+        inputMathGrade = prompt("Enter your Math Grade");
+        let physicGrade = parseFloat(inputPhysicGrade);
+        let chemistryGrade = parseFloat(inputChemistryGrade);
+        let mathGrade = parseFloat(inputMathGrade);
+
+        let average = (physicGrade + chemistryGrade + mathGrade) / 3;
+        let summary = physicGrade + chemistryGrade + mathGrade;
+
+        document.write("Your Average Grade is: " + average);
+        document.write('<br/>');
+        document.write("Your Summary Grade is: " + summary);
+    </script>
+
+</body>
+
 </html>

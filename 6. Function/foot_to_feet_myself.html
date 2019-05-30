@@ -1,41 +1,38 @@
-
-
-
 <!DOCTYPE html>
 <html>
 
 <body>
-    The meter of <input type="text" id= "input" oninput="calculate1()"/> feet is <span id="result1"></span>
+    The meter of <input type="text" id="input" oninput="calculate1()" /> feet is <span id="result1"></span>
     <br></br>
-    The feet of <input type="text" id= "input" oninput="calculate2()"/> meter is <span id="result2"></span>
+    The feet of <input type="text" id="input" oninput="calculate2()" /> meter is <span id="result2"></span>
 
-    
-<script>
-    function feetToMeter(number) {
-        let result1 = number * 0.305;
-        return result1;
 
-    }
-    function MeterToFeet(number) {
-        let result2 = number * 3.279;
-        return result2;
+    <script>
+        function feetToMeter(number) {
+            let result1 = number * 0.305;
+            return result1;
 
-    }
+        }
+        function MeterToFeet(number) {
+            let result2 = number * 3.279;
+            return result2;
 
-    function calculate1() {
-        let input = document.getElementById("input").value;
-        let result = feetToMeter(input);
-        document.getElementById("result1").innerHTML = result;
-    }
-    function calculate2() {
-        let input = document.getElementById("input").value;
-        let result = MeterToFeet(input);
-        document.getElementById("result2").innerHTML = result;
-    }
+        }
 
-  
-    
-</script>
+        function calculate1() {
+            let input = document.getElementById("input").value;
+            let result = feetToMeter(input);
+            document.getElementById("result1").innerHTML = result;
+        }
+        function calculate2() {
+            let input = document.getElementById("input").value;
+            let result = MeterToFeet(input);
+            document.getElementById("result2").innerHTML = result;
+        }
+
+
+
+    </script>
 </body>
 
 </html>

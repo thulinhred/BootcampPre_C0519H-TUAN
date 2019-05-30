@@ -2,30 +2,30 @@
 <html>
 
 <body>
-  <script>
-      let inputName;
-      inputName = prompt("Please input your name");
-      if (inputName == "Admin") {
-          let inputPassword;
-          inputPassword = prompt( "Please input your password");
-          if( inputPassword == "TheMaster") {
-            alert(" Welcome");
-          }
-          else if ( inputPassword == null) {
-              alert( " Canceled");
-          }
-          else {
-              alert(" Wrong password");
-          }
-      }
-      else if (inputName == null) {
-          alert(" Canceled");
-      } 
-      else {
-          alert(" I don't know you")
-      }   
-      
-  </script>
+    <script>
+        let inputName;
+        inputName = prompt("Please input your name");
+        if (inputName == "Admin") {
+            let inputPassword;
+            inputPassword = prompt("Please input your password");
+            if (inputPassword == "TheMaster") {
+                alert(" Welcome");
+            }
+            else if (inputPassword == null) {
+                alert(" Canceled");
+            }
+            else {
+                alert(" Wrong password");
+            }
+        }
+        else if (inputName == null) {
+            alert(" Canceled");
+        }
+        else {
+            alert(" I don't know you")
+        }
+
+    </script>
 </body>
 
 </html>

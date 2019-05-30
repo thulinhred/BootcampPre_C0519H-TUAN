@@ -48,39 +48,39 @@
                 return !apple.isEmpty();
             }
             this.eat = function (apple) {
-                    this.weight++;
-                    apple.decrease();
-                }
+                this.weight++;
+                apple.decrease();
+            }
 
             this.say = function () {
-                    console.log("Hey I can talk!");
-                }
+                console.log("Hey I can talk!");
+            }
             this.getName = function () {
-                    return this.name;
-                }
+                return this.name;
+            }
             this.setName = function (name) {
-                    this.name = name;
-                }
+                this.name = name;
+            }
             this.getWeight = function () {
-                    return this.weight;
-
-                }
-            this.setWeight = function (weight) {
-                    this.weight = weight;
-                }
-
-
+                return this.weight;
 
             }
-            // Lets run
-            let adam = new Human('Adam', 'male', 54);
-            let eva = new Human("eva", "female", 45);
-            let newapple = new Apple()
-            adam.eat(newapple);
-            eva.eat(newapple);
-            console.log(adam.getWeight());
-            console.log(eva.getWeight());
-            console.log(newapple.getWeight())
+            this.setWeight = function (weight) {
+                this.weight = weight;
+            }
+
+
+
+        }
+        // Lets run
+        let adam = new Human('Adam', 'male', 54);
+        let eva = new Human("eva", "female", 45);
+        let newapple = new Apple()
+        adam.eat(newapple);
+        eva.eat(newapple);
+        console.log(adam.getWeight());
+        console.log(eva.getWeight());
+        console.log(newapple.getWeight())
 
 
     </script>

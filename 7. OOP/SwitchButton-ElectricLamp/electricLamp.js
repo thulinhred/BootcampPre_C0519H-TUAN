@@ -1,10 +1,10 @@
 function ElectricLamp(status) {
 
-    this.turnOff = function() {
+    this.turnOff = function () {
         this.status = false;
     }
 
-    this.turnOn = function() {
+    this.turnOn = function () {
         this.status = true;
     }
 }

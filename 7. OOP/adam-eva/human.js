@@ -10,13 +10,13 @@ function Human(name, gender, weight) {
     this.setGender = function (gender) {
         this.gender = gender;
     }
-    
+
     this.checkApple = function (apple) {
         return !apple.isEmpty();
     }
-    
+
     this.eat = function (apple) {
-        this.weight ++;
+        this.weight++;
         apple.decrease();
     }
 
@@ -40,7 +40,7 @@ function Human(name, gender, weight) {
         this.weight = weight;
     }
 
-    this.showWeight = function() {
+    this.showWeight = function () {
         console.log(this.name + "'s weight is " + this.weight);
     }
 }

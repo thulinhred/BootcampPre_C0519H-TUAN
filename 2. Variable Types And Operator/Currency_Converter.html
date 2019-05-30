@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h2><strong>Currency Converter Application</h2>
+  <h2><strong>Currency Converter Application</h2>
 
 
-<input type ="number" size = "20" id ="amount">
-      
-  <select id = "fromCurrency">
-    <option value = "VND">VND</option>
-    <option value = "USD">USD</option>
+  <input type="number" size="20" id="amount">
+
+  <select id="fromCurrency">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
   </select>
 
-    
-  <select id = "toCurrency">
-    <option value = "USD">USD</option>
-    <option value = "VND">VND</option>
-  </select>
-  <button type = "button" onclick = "Convert()">Convert</button>
 
-  <div id = "result">
+  <select id="toCurrency">
+    <option value="USD">USD</option>
+    <option value="VND">VND</option>
+  </select>
+  <button type="button" onclick="Convert()">Convert</button>
+
+  <div id="result">
   </div>
-    
+
   <script>
     let amount;
     let fromCurrency;
     let toCurrency;
     let result;
     function Convert() {
-        fromCurrency = document.getElementById ("fromCurrency").value
-        toCurrency = document.getElementById ("toCurrency").value
+      fromCurrency = document.getElementById("fromCurrency").value
+      toCurrency = document.getElementById("toCurrency").value
 
 
-        amount = document.getElementById("amount").value
-        if (fromCurrency == "VND" && toCurrency == "USD") {
-            result = parseFloat(amount)/23000
-            document.getElementById("result").innerHTML = result
-        }
-        else if ( fromCurrency == "USD" && toCurrency == "VND") {
-            result = parseFloat (amount) *23000
-            document.getElementById("result").innerHTML = result
-        }
+      amount = document.getElementById("amount").value
+      if (fromCurrency == "VND" && toCurrency == "USD") {
+        result = parseFloat(amount) / 23000
+        document.getElementById("result").innerHTML = result
+      }
+      else if (fromCurrency == "USD" && toCurrency == "VND") {
+        result = parseFloat(amount) * 23000
+        document.getElementById("result").innerHTML = result
+      }
     }
-    
-</script>
+
+  </script>
 
 
 </body>
+
 </html>

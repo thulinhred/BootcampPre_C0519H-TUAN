@@ -1,39 +1,33 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 
 <body>
-    <input value ="" id= "inputValue"></input>
-    <input type="button" value ="Check Value" onclick= "test()"></input>
+    <input value="" id="inputValue"></input>
+    <input type="button" value="Check Value" onclick="test()"></input>
 
-    
-<script>
-    
-    function test(){
-        let value = document.getElementById("inputValue").value.valueOf();
 
-        console.log(typeof(value));
-        if (isNaN(value) === true) {
-            console.log('It is a string');
+    <script>
+
+        function test() {
+            let value = document.getElementById("inputValue").value.valueOf();
+
+            console.log(typeof (value));
+            if (isNaN(value) === true) {
+                console.log('It is a string');
+            }
+            else if (isNaN(value) === false) {
+                console.log('It is a number');
+            }
+            else {
+                console.log('It is not number neither text');
+            }
         }
-        else if (isNaN(value) === false) {
-            console.log('It is a number');
-        }  
-        else {
-            console.log('It is not number neither text');
-        }     
-    }
 // haha??
-   
 
-  
-    
-</script>
+
+
+
+    </script>
 </body>
 
 </html>

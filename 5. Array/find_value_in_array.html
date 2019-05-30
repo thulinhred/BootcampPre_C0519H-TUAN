@@ -1,40 +1,38 @@
-
-
 <!DOCTYPE html>
 <html>
 
 <body>
-        <input type= "text" value= "" id= "inputText"></input>
-        <input type="button" value="Let's check" onclick="checkArray()"></input>
+    <input type="text" value="" id="inputText"></input>
+    <input type="button" value="Let's check" onclick="checkArray()"></input>
 
-    
-<script>
 
-    let array = ["Yeu xa", "If", "Mo", "Dong"];
-    let count = 0; //them 1 bien count de no hien not found ngay khi khong co
-    function checkArray() {
-        for (let i=0; i < array.length; i++) {
-            if (array[i] == document.getElementById("inputText").value) {
-                alert(i);
-                count++;             
-            }  
+    <script>
+
+        let array = ["Yeu xa", "If", "Mo", "Dong"];
+        let count = 0; //them 1 bien count de no hien not found ngay khi khong co
+        function checkArray() {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] == document.getElementById("inputText").value) {
+                    alert(i);
+                    count++;
+                }
+            }
+            if (count == 0) {
+                alert('not found');
+            }
+
         }
-        if(count == 0){
-            alert('not found');
-        }
-        
-    } 
 //cach giao trinh
-/* let value = prompt("Enter a number: ");
-   let x = [-3, 5, 1, 3, 2, 10];
-   for (let i = 0; i < x.length; i++) {
-    if (value == x[i]) {
-        alert("Value " + x[i] + "found at " + i);
-    }
- } 
- */
-    
-</script>
+        /* let value = prompt("Enter a number: ");
+           let x = [-3, 5, 1, 3, 2, 10];
+           for (let i = 0; i < x.length; i++) {
+            if (value == x[i]) {
+                alert("Value " + x[i] + "found at " + i);
+            }
+         }
+         */
+
+    </script>
 </body>
 
 </html>

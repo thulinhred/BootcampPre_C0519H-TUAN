@@ -2,29 +2,29 @@
 <html>
 
 <body>
-  <script>
-     let inputYear;
-     inputYear = parseInt(prompt("Input year"));
-     if (inputYear % 4 == 0) {
-         if (inputYear % 100 == 0){
-             if (inputYear % 400 == 0) {
-                 alert('This year ' + inputYear + ' is leap year');
-             }
-             else {
-                 alert ('This year ' + inputYear + ' is not leap year');
-             }
+    <script>
+        let inputYear;
+        inputYear = parseInt(prompt("Input year"));
+        if (inputYear % 4 == 0) {
+            if (inputYear % 100 == 0) {
+                if (inputYear % 400 == 0) {
+                    alert('This year ' + inputYear + ' is leap year');
+                }
+                else {
+                    alert('This year ' + inputYear + ' is not leap year');
+                }
 
-          }
-          else {
-              alert ('This year ' + inputYear + ' is leap year');
-          }
+            }
+            else {
+                alert('This year ' + inputYear + ' is leap year');
+            }
         }
-     else {
-         alert ('This year ' + inputYear + ' is not leap year');
-     }
+        else {
+            alert('This year ' + inputYear + ' is not leap year');
+        }
 
-     
-  </script>
+
+    </script>
 </body>
 
 </html>

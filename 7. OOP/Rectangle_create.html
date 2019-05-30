@@ -1,34 +1,30 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 
 <body>
 
-    
-<script>
-    let Rectangle = function(length, width) {
-        this.length = length;
-        this.width = width;
-        this.getPerimeter = function() {
-            return length * width;
-        }
-        this.getAcreage = function() {
-            return 2 * (length + width);
-        }
-    }
 
-    let rectangle = new Rectangle(3, 2);
-    let perimeter = rectangle.getPerimeter();
-    let acreage = rectangle.getAcreage();
-    alert("perimeter: " + perimeter + "; acreage: " + acreage);
-    
+    <script>
+        let Rectangle = function (length, width) {
+            this.length = length;
+            this.width = width;
+            this.getPerimeter = function () {
+                return length * width;
+            }
+            this.getAcreage = function () {
+                return 2 * (length + width);
+            }
+        }
 
-  
-    
-</script>
+        let rectangle = new Rectangle(3, 2);
+        let perimeter = rectangle.getPerimeter();
+        let acreage = rectangle.getAcreage();
+        alert("perimeter: " + perimeter + "; acreage: " + acreage);
+
+
+
+
+    </script>
 </body>
 
 </html>

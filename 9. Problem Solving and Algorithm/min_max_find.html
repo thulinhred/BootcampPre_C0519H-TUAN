@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Min Max</title>
+</head>
+
+<body>
+    <script>
+
+        // findMin function 
+        let findMin = function (arr) {
+            let min = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+
+        // findMax function
+        function findMax(arr) {
+            let max = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+
+        //dispArr function
+        function dispArr(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                document.write(arr[i]);
+            }
+        }
+
+        // new array
+        let nums = [];
+        for (let i = 0; i < 100; ++i) {
+            nums[i] = Math.floor(Math.random() * 101);
+        }
+
+        //running findMin
+        let minValue = findMin(nums);
+        dispArr(nums);
+        document.write("<br/>");
+        document.write("The minimum value is: " + minValue);
+        document.write("<br/>");
+
+        //running findMax
+        let maxValue = findMax(nums);
+        dispArr(nums);
+        document.write("<br/>");
+        document.write("The maximum value is: " + maxValue);
+
+        //findMin and findMax the array indicated
+
+        let arr1 = new Array(14, 17, 89, 9, 20);
+        let minValue1 = findMin(arr1);
+        let maxValue1 = findMax(arr1);
+        console.log(minValue1);
+        console.log(maxValue1);
+
+
+
+    </script>
+
+</body>
+
+</html>

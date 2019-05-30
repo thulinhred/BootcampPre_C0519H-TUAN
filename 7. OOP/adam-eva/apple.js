@@ -3,7 +3,7 @@ function Apple(weight) {
     this.weight = weight;
 
     this.decrease = function () {
-        this.weight --;
+        this.weight--;
     }
 
     this.isEmpty = function () {
@@ -14,7 +14,7 @@ function Apple(weight) {
         return this.weight;
     }
 
-    this.showWeight = function() {
+    this.showWeight = function () {
         console.log("Apple's weight is " + this.weight);
     }
 }

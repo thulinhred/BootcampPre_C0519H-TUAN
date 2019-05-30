@@ -1,34 +1,31 @@
-
-
-
 <!DOCTYPE html>
 <html>
 
 <body>
-    
-    
-<script>
-    let num1 = parseFloat(prompt("Input 1st number"));
-    let num2 = parseFloat(prompt("Input 2nd number"));
-    let num3 = parseFloat(prompt("Input 3rd number"));
-    let array =[num1, num2, num3];
-    let min = array[0];
 
-    function minArr() {
-        for (i=1; i< 3; i++) {
-            if (array[i] < min) {
-                min = array[i];
+
+    <script>
+        let num1 = parseFloat(prompt("Input 1st number"));
+        let num2 = parseFloat(prompt("Input 2nd number"));
+        let num3 = parseFloat(prompt("Input 3rd number"));
+        let array = [num1, num2, num3];
+        let min = array[0];
+
+        function minArr() {
+            for (i = 1; i < 3; i++) {
+                if (array[i] < min) {
+                    min = array[i];
+                }
             }
+            alert(min);
         }
-        alert(min);   
-    }
-    minArr();
+        minArr();
 
     //haha
 
-  
-    
-</script>
+
+
+    </script>
 </body>
 
 </html>

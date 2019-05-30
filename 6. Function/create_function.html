@@ -1,31 +1,28 @@
-
-
-
 <!DOCTYPE html>
 <html>
 
 <body>
 
-    
-<script>
-    function processConfirm(answer) {
-        let result = "";
-        if (answer) {
-        result = "Excellent. We'll play a nice game of chess."; //true
-        } else {
-        result = "Maybe later then."; //false
-        }
-        return result;
-    }
-    
-    //Tạo hộp thoại xác nhận, gọi hàm processConfirm() và hiển thị kết quả
-    let confirmAnswer = confirm("Shall we play a game?"); //should be a question
-    let theAnswer = processConfirm(confirmAnswer);
-    alert(theAnswer);
 
-  
-    
-</script>
+    <script>
+        function processConfirm(answer) {
+            let result = "";
+            if (answer) {
+                result = "Excellent. We'll play a nice game of chess."; //true
+            } else {
+                result = "Maybe later then."; //false
+            }
+            return result;
+        }
+
+        //Tạo hộp thoại xác nhận, gọi hàm processConfirm() và hiển thị kết quả
+        let confirmAnswer = confirm("Shall we play a game?"); //should be a question
+        let theAnswer = processConfirm(confirmAnswer);
+        alert(theAnswer);
+
+
+
+    </script>
 </body>
 
 </html>
